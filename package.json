@@ -1,0 +1,38 @@
+{
+  "name": "enterprise",
+  "version": "1.0.0",
+  "description": "College homework project. A website for a car-rental company.",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramirez1986/enterprise.git"
+  },
+  "keywords": [
+    "landing",
+    "school project",
+    "college project"
+  ],
+  "author": "ramirez1986",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramirez1986/enterprise/issues"
+  },
+  "homepage": "https://github.com/ramirez1986/enterprise#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "cssnano": "^7.0.6",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "postcss": "^8.4.45",
+    "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
