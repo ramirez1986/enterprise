@@ -1,0 +1,12 @@
+.field-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--s-sm);
+}
+
+.field-group__label {
+  color: var(--fg-3);
+  font-size: var(--fs-sm);
+  line-height: 1;
+}

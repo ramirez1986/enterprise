@@ -1,0 +1,117 @@
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  translate: -50% 0%;
+  width: 100%;
+  max-width: inherit;
+  height: 60px;
+  background: color-mix(in srgb, var(--bg-container) calc(100% * var(--o-base)), transparent);
+  backdrop-filter: blur(var(--bf-blur-base));
+  border-bottom: var(--bw-sm) solid var(--bc-ntrl-dk);
+  z-index: 99;
+}
+
+.nav-header__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--p-lgst);
+}
+
+.nav-header__toggle-button {
+  display: none !important;
+}
+
+.nav-header__links {
+  display: flex;
+  align-items: center;
+  gap: var(--s-base);
+  list-style: none;
+}
+
+.nav-header__link {
+  color: var(--fg-link);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  transition: all var(--td-base) var(--tf-primary), outline 0ms;
+
+  &:hover {
+    color: var(--fg-link-hov);
+  }
+}
+
+.nav-header__links li:has(.nav-header__link--profile) {
+  display: none;
+}
+
+.nav-header__profile-svg {
+  color: var(--fg-3);
+}
+
+@media (max-width: 675px) {
+  .nav-header {
+    position: sticky;
+    left: unset;
+    translate: unset;
+    background: var(--bg-container);
+    backdrop-filter: none;
+  }
+
+  .nav-header__inner {
+    padding: 0 var(--p-lg);
+  }
+}
+
+@media (max-width: 475px) {
+  .nav-header__toggle-button {
+    display: flex !important;
+    z-index: 1;
+  }
+  
+  .nav-header__links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    translate: 0% 0%;
+    /* height: 40vh; */
+    width: 100%;
+    padding: var(--p-lgr);
+    background: var(--bg-container);
+    transition: var(--td-fast) var(--tf-primary);
+
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      translate: 0% -5%;
+    }
+  }
+
+  .nav-header__links li:has(.nav-header__link--profile) {
+    display: unset;
+  }
+
+  .nav-header__links li:has(.nav-header__profile-menu) {
+    display: none;
+  }
+
+  .nav-header__link {
+    display: flex;
+    align-items: center;
+    color: var(--fg-2);
+    font-size: var(--fs-base);
+    width: 100%;
+    padding: var(--p-lg) var(--p-base);
+    border-top: var(--bw-sm) solid var(--bc-ntrl-dk);
+  }
+
+  .nav-header__profile-svg {
+    color: var(--fg-2);
+  }
+}

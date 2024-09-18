@@ -1,0 +1,64 @@
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--h-sm);
+  padding: 0 var(--p-lg);
+  gap: var(--s-base);
+  border-radius: var(--br-base);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-extra-bold);
+  transition: all var(--td-base) var(--tf-primary), outline 0ms;
+
+  &[type="submit"] {
+    cursor: pointer;
+  }
+}
+
+@define-mixin btn $mod {
+  background: var(--bg-btn-$mod);
+  border: var(--bw-sm) solid var(--bc-btn-$mod);
+  color: var(--fg-btn-$mod);
+
+  &:hover {
+    background: var(--bg-btn-$(mod)-hov);
+    border-color: var(--bc-btn-$(mod)-hov);
+    color: var(--fg-btn-$(mod)-hov);
+  }
+
+  &:active,
+  &.is-active {
+    background: var(--bg-btn-$(mod)-active);
+    border-color: var(--bc-btn-$(mod)-active);
+    color: var(--fg-btn-$(mod)-active);
+  }
+}
+
+.btn--primary { @mixin btn primary; }
+.btn--secondary { @mixin btn secondary; }
+.btn--tertiary { @mixin btn tertiary; }
+
+.btn--round {
+  aspect-ratio: 1;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn__icon-container {
+  margin-left: auto;
+  aspect-ratio: 1;
+}
+
+.btn--base {
+  height: var(--h-base);
+  padding: 0 var(--p-lgr);
+}
+
+.btn--sm {
+  height: var(--h-smr);
+}
+
+.btn--w-100 {
+  width: 100%;
+}

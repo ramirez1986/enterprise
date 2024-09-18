@@ -1,0 +1,36 @@
+body {
+  background: var(--bg-body);
+  color: var(--clr-ntrl-900);
+  font-family: var(--ff-primary);
+}
+
+.root {
+  position: relative;
+  width: 1000px;
+  max-width: min(1000px, 100%);
+  margin: auto;
+  background: var(--bg-page);
+}
+
+.nav-access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: var(--clr-ntrl-900);
+  opacity: 0;
+  z-index: 10000;
+  pointer-events: none;
+
+  &:has(a:focus-visible) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.nav-access__link-to-content {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-extra-bold);
+}

@@ -1,0 +1,5 @@
+.logo {
+  color: var(--fg-2);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-extra-bold);
+}

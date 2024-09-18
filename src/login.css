@@ -1,0 +1,7 @@
+@import '../styles/reset.css';
+@import '../styles/root.css';
+@import './fonts/fonts.css';
+@import '../styles/base.css';
+@import '../components/logo/logo.css';
+@import '../components/navHeader/nav-header.css';
+@import '../components/buttons/buttons.css';

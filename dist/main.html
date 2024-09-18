@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Enterprise - упрощенная аренда автомобилей</title>
+    <meta name="description" content="Надежные и доступные услуги по прокату автомобилей.">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/e6030b028557afdb4930.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/e8d6bcfd127c384e7033.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/af41b4cac43012487dd4.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <svg style="display: none">
+      <defs>
+        <symbol id="x-svg" viewBox="0 0 10 10">
+          <path d="M0,0 L10,10"/>
+          <path d="M0,10 L10,0"/>
+        </symbol>
+        <symbol id="filter-svg" viewBox="0 0 14 12">
+          <path d="M0,2 L14,2"></path>
+          <path d="M2,6 L12,6"></path>
+          <path d="M4,10 L10,10"></path>
+        </symbol>
+        <symbol id="burger-svg" viewBox="0 0 14 12">
+          <path d="M0,2 L14,2"/>
+          <path d="M0,6 L14,6"/>
+          <path d="M0,10 L14,10"/>
+        </symbol>
+        <symbol id="profile-svg" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </symbol>
+        <symbol id="search-svg" viewBox="0 0 16 16">
+          <path xmlns="http://www.w3.org/2000/svg" d="M11.742 10.344C12.7103 9.02267 13.144 7.38447 12.9563 5.75713C12.7687 4.12979 11.9735 2.63332 10.7298 1.56711C9.48616 0.500899 7.88579 -0.056418 6.24888 0.00665514C4.61197 0.0697283 3.05923 0.748541 1.90131 1.90729C0.743395 3.06603 0.0656939 4.61925 0.00379204 6.25621C-0.0581098 7.89317 0.500353 9.49314 1.56745 10.736C2.63455 11.9789 4.13159 12.773 5.75906 12.9596C7.38654 13.1461 9.02442 12.7112 10.345 11.742H10.344C10.3734 11.782 10.406 11.8203 10.442 11.857L14.292 15.707C14.4796 15.8946 14.7339 16.0001 14.9992 16.0002C15.2645 16.0003 15.5189 15.895 15.7065 15.7075C15.8942 15.52 15.9997 15.2656 15.9997 15.0003C15.9998 14.7351 15.8946 14.4806 15.707 14.293L11.857 10.443C11.8213 10.4068 11.7829 10.3743 11.742 10.344ZM12 6.49998C12 7.22225 11.8578 7.93745 11.5814 8.60474C11.305 9.27203 10.8999 9.87834 10.3891 10.3891C9.87841 10.8998 9.27209 11.3049 8.6048 11.5813C7.93751 11.8577 7.22231 12 6.50004 12C5.77777 12 5.06258 11.8577 4.39528 11.5813C3.72799 11.3049 3.12168 10.8998 2.61096 10.3891C2.10023 9.87834 1.69511 9.27203 1.41871 8.60474C1.14231 7.93745 1.00004 7.22225 1.00004 6.49998C1.00004 5.04129 1.57951 3.64234 2.61096 2.61089C3.64241 1.57944 5.04135 0.999979 6.50004 0.999979C7.95873 0.999979 9.35768 1.57944 10.3891 2.61089C11.4206 3.64234 12 5.04129 12 6.49998Z"/>
+        </symbol>
+        <symbol id="caret-right-fill-svg" viewBox="0 0 16 16">
+          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="root">
+      <div class="nav-access">
+        <a href="#content" class="nav-access__link-to-content">Перейти к контенту</a>
+      </div>
+      <header class="nav-header">
+        <div class="nav-header__inner">
+          <a href="#" class="logo">Enterprise</a>
+          <nav class="nav-header__nav js-nav-header-nav">
+            <button class="nav-header__toggle-button btn btn--tertiary btn--round js-nav-header-nav-toggle-button" aria-label="Открыть меню" type="button">
+              <svg width="14" height="12" stroke="currentColor">
+                <use href="#burger-svg"/>
+              </svg>
+            </button>
+            <ul class="nav-header__links is-hidden js-nav-header-nav-links">
+              <li><a class="nav-header__link" href="#">Акции</a></li>
+              <li><a class="nav-header__link" href="#">Бронирование</a></li>
+              <li><a class="nav-header__link nav-header__link--profile" href="#">Личный кабинет</a></li>
+              <li>
+                <div class="nav-header__profile-menu">
+                  <a href="./login.html">
+                    <button class="btn btn--tertiary btn--round" aria-label="Открыть меню аккаунта" type="button">
+                      <svg class="" width="20" height="20">
+                        <use href="#profile-svg"/>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="content" class="homepage">
+        <div class="hero js-main-hero">
+          <div class="hero__image"></div>
+          <section class="section hero__content">
+            <hgroup class="hero__header">
+              <h1 class="hero__heading">Найдите идеальный вариант аренды автомобиля</h1>
+              <p class="hero__text">
+                Компактные машины для&nbsp;езды по&nbsp;городу,
+                просторные внедорожники для&nbsp;путешествий,
+                прекрасные и&nbsp;роскошные автомобили на ваш выбор.
+              </p>
+            </hgroup>
+            <form class="hero__form">
+              <fieldset class="hero__fieldset">
+                <div class="input hero__input-container">
+                  <svg class="svg hero__input-svg" width="16" height="16">
+                    <use href="#search-svg"/>
+                  </svg>
+                  <input class="hero__input" placeholder="Укажите местоположение..." name="location" aria-label="Местоположение для поиска" role="search" autocomplete="search-location" type="search" required>
+                </div>
+                <button class="btn btn--primary btn--base hero__submit-button" type="submit">Поиск</button>
+              </fieldset>
+              <div class="hero__search-filters">
+                <fieldset class="hero__fieldset hero__fieldset--filters">
+                  <legend style="display: none">Фильтры для поиска автомобиля</legend>
+                  <div class="hero__search-option field-group">
+                    <label class="field-group__label" for="car-class">Класс</label>
+                    <button class="btn btn--secondary" id="car-class" name="car-class" type="button">
+                      Люкс
+                      <i class="btn__icon-container">
+                        <svg width="14" height="14"><use href="#caret-right-fill-svg"/></svg>
+                      </i>
+                    </button>
+                  </div>
+                  <div class="hero__search-option field-group">
+                    <label class="field-group__label" for="car-brand">Марка</label>
+                    <button class="btn btn--secondary" id="car-brand" name="car-brand" type="button">
+                      BMW
+                      <i class="btn__icon-container">
+                        <svg width="14" height="14"><use href="#caret-right-fill-svg"/></svg>
+                      </i>
+                    </button>
+                  </div>
+                  <div class="hero__search-option field-group">
+                    <label class="field-group__label" for="car-model">Модель</label>
+                    <button class="btn btn--secondary" id="car-model" name="car-model" type="button">
+                      M4 Competition
+                      <i class="btn__icon-container">
+                        <svg width="14" height="14"><use href="#caret-right-fill-svg"/></svg>
+                      </i>
+                    </button>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="modal-container hero__search-filters hero__search-filters--mobile is-collapsed js-modal-container">
+                <button class="btn btn--tertiary btn--w-100 js-modal-toggle-button is-inactive" type="button">
+                  Фильтры
+                  <span class="btn__icon-container">
+                    <svg class="" width="14" height="12" stroke="currentColor">
+                      <use href="#filter-svg"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="modal js-modal is-hidden">
+                  <header class="modal__header">
+                    <h2 class="modal__heading">
+                      Фильтры
+                    </h2>
+                    <button class="modal__close-button btn btn--round btn--tertiary js-modal-close-button" type="button">
+                      <svg width="10" height="10" stroke="currentColor" stroke-width="1.5">
+                        <use href="#x-svg"/>
+                      </svg>
+                    </button>
+                  </header>
+                  <fieldset class="hero__fieldset hero__fieldset--filters js-search-filters-mobile">
+                    <legend style="display: none">Фильтры для поиска автомобиля</legend>
+                    <div class="hero__search-option field-group">
+                      <label class="field-group__label" for="car-class">Класс</label>
+                      <button class="btn btn--secondary" id="car-class" name="car-class" type="button">
+                        Люкс
+                        <i class="btn__icon-container">
+                          <svg width="14" height="14"><use href="#caret-right-fill-svg"/></svg>
+                        </i>
+                      </button>
+                    </div>
+                    <div class="hero__search-option field-group">
+                      <label class="field-group__label" for="car-brand">Марка</label>
+                      <button class="btn btn--secondary" id="car-brand" name="car-brand" type="button">
+                        BMW
+                        <i class="btn__icon-container">
+                          <svg width="14" height="14"><use href="#caret-right-fill-svg"/></svg>
+                        </i>
+                      </button>
+                    </div>
+                    <div class="hero__search-option field-group">
+                      <label class="field-group__label" for="car-model">Модель</label>
+                      <button class="btn btn--secondary" id="car-model" name="car-model" type="button">
+                        M4 Competition
+                        <i class="btn__icon-container">
+                          <svg width="14" height="14"><use href="#caret-right-fill-svg"/></svg>
+                        </i>
+                      </button>
+                    </div>
+                  </fieldset>
+                  <fieldset class="hero__fieldset hero__fieldset--mobile-buttons">
+                    <legend style="display: none">Действия с фильтрами</legend>
+                    <button class="btn btn--secondary btn--base js-search-filters-cancel-btn">Отмена</button>
+                    <button class="btn btn--primary btn--base js-search-filters-apply-btn">Применить</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+        <section class="section about">
+          <h2 class="section__heading">О нас</h2>
+          <div class="about__content">
+            <figure class="about__figure">
+              <img class="about__image" src="resources/90ab6b804c2756f353cd.jpg" alt="Штаб-квартира Enterprise">
+              <figcaption class="about__figcaption">Штаб-квартира Enterprise</figcaption>
+            </figure>
+            <p class="about__text">
+              <b>Enterprise</b> предоставляет надежные и&nbsp;доступные услуги
+              по&nbsp;прокату автомобилей уже <b>более 67 лет</b>. Имея в&nbsp;распоряжении множество современных автомобилей на&nbsp;выбор
+              и&nbsp;команду опытных профессионалов, мы стремимся обеспечить нашим клиентам беззаботный и&nbsp;приятный опыт вождения.
+            </p>
+          </div>
+        </section>
+        <section class="section news">
+          <h2 class="section__heading">Новости</h2>
+          <div class="news__content">
+            <article class="news-article">
+              <figure class="news-article__figure">
+                <img class="news-article__image" src="resources/bbf799b1520327306648.jpg" alt="Красивый вид на Италию">
+              </figure>
+              <a class="news-article__block-link" href="#" tabindex="-1"></a>
+              <div class="news-article__content">
+                <h3 class="news-article__headline">Прокат автомобилей доступен в новых местах</h3>
+                <div class="news-article__info">
+                  <time class="news-article__date" datetime="2024-08-28">28.8.2024</time>
+                </div>
+                <p class="news-article__description">
+                  Мы начинаем предлагать аренду автомобилей в дополнительных точках по всему региону.
+                  Теперь клиенты смогут арендовать автомобиль в более удобных местах,
+                  что сделает их путешествия проще и&nbsp;доступнее.
+                </p>
+                <div class="news-article__controls">
+                  <a class="news-article__link" href="#">Читать далее...</a>
+                </div>
+              </div>
+            </article>
+            <article class="news-article">
+              <figure class="news-article__figure">
+                <img class="news-article__image" src="resources/851436f5dcba6480f1da.jpg" alt="Салон Bentley">
+              </figure>
+              <a class="news-article__block-link" href="#" tabindex="-1"></a>
+              <div class="news-article__content">
+                <h3 class="news-article__headline">Пополнение ассортимента роскошными автомобилями</h3>
+                <div class="news-article__info">
+                  <time class="news-article__date" datetime="2024-08-19">19.8.2024</time>
+                </div>
+                <p class="news-article__description">
+                  Ощутите максимальный комфорт и&nbsp;стиль на&nbsp;дороге.
+                  Мы предлагаем на&nbsp;выбор автомобили высочайшего класса,
+                  которые порадуют клиентов комфортом и&nbsp;удобствами.
+                  Забронируйте автомобиль прямо сейчас и&nbsp;почувствуйте роскошь как&nbsp;никогда раньше.
+                </p>
+                <div class="news-article__controls">
+                  <a class="news-article__link" href="#">Читать далее...</a>
+                </div>
+              </div>
+            </article>
+            <article class="news-article">
+              <figure class="news-article__figure">
+                <img class="news-article__image" src="resources/61e5b157c9a4e3a1af76.jpg" alt="Заключение сделки рукопожатием">
+              </figure>
+              <a class="news-article__block-link" href="#" tabindex="-1"></a>
+              <div class="news-article__content">
+                <h3 class="news-article__headline">Объявлено о новом партнерстве с компаниями по совместному использованию поездок</h3>
+                <div class="news-article__info">
+                  <time class="news-article__date" datetime="2024-08-05">5.8.2024</time>
+                </div>
+                <p class="news-article__description">
+                  Это партнерство обеспечит беспрепятственную интеграцию услуг по&nbsp;прокату автомобилей
+                  и&nbsp;совместному использованию поездок,
+                  позволяя нам предоставить множество вариантов
+                  для&nbsp;удовлетворения Ваших транспортных потребностей.
+                </p>
+                <div class="news-article__controls">
+                  <a class="news-article__link" href="#">Читать далее...</a>
+                </div>
+              </div>
+            </article>
+            <article class="news-article">
+              <figure class="news-article__figure">
+                <img class="news-article__image" src="resources/d23bb2367c6c2306651d.jpg" alt="Человек моет машину с химическими средствами">
+              </figure>
+              <a class="news-article__block-link" href="#" tabindex="-1"></a>
+              <div class="news-article__content">
+                <h3 class="news-article__headline">Введена новая программа технического обслуживания и очистки</h3>
+                <div class="news-article__info">
+                  <time class="news-article__date" datetime="2024-07-25">25.7.2024</time>
+                </div>
+                <p class="news-article__description">
+                  Новая программа включает в&nbsp;себя регулярные проверки автомобилей,
+                  тщательную уборку между арендами,
+                  а&nbsp;также круглосуточную помощь на дорогах,
+                  чтобы гарантировать нашим клиентам безопасное и&nbsp;приятное вождение.
+                </p>
+                <div class="news-article__controls">
+                  <a class="news-article__link" href="#">Читать далее...</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button class="news__show-more-btn btn btn--primary">
+            Загрузить еще
+          </button>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__main">
+          <a href="#" class="logo">
+            Enterprise
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Акции</a></li>
+              <li><a href="#" class="footer__link">Бронирование</a></li>
+              <li><a href="#" class="footer__link">Личный кабинет</a></li>
+            </ul>
+          </nav>
+          <address class="footer__contact">
+            <a class="footer__link footer__link--tel" href="tel:+78001111111">8 (800) 111-11-11</a>
+          </address>
+        </div>
+        <div class="footer__legal">
+          <span class="footer__copyright">&copy; Enterprise 2024</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

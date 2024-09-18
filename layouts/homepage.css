@@ -1,0 +1,27 @@
+.homepage {
+  width: 100%;
+}
+
+.section {
+  padding: var(--p-lgst);
+}
+
+.section__heading {
+  font-size: var(--fs-lgr);
+  font-weight: var(--fw-extra-bold);
+  padding-bottom: var(--p-base);
+  margin-bottom: var(--s-lgr);
+  border-bottom: var(--bw-sm) solid var(--bc-ntrl-dk);
+  text-align: left;
+  line-height: var(--l-h-sm);
+}
+
+@media (max-width: 450px) {
+  .section {
+    padding: var(--p-lgst) var(--s-lg);
+  }
+
+  .section__heading {
+    text-align: left;
+  }
+}

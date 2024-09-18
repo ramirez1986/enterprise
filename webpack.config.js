@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.css',
+  entry: {
+    main: './src/main.js',
+    login: './src/login.js',
+  },
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -36,11 +39,30 @@ module.exports = {
           filename: 'resources/[hash][ext]',
         },
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'resources/[hash][ext]',
+        },
+      },
     ],
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      filename: 'main.html',
+      template: './src/main.html',
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: './src/login.html',
+      chunks: ['login'],
     }),
     new MiniCssExtractPlugin(),
   ],

@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__content {
+  width: 100%;
+  display: flex;
+  gap: var(--s-lg);
+}
+
+.about__figure {
+  width: 50%;
+}
+
+.about__image {
+  border-radius: var(--br-lg);
+}
+
+.about__figcaption {
+  margin-top: var(--s-sm);
+  font-size: var(--fs-sm);
+  color: var(--fg-2);
+  text-align: center;
+  line-height: var(--l-h-lgr);
+}
+
+.about__text {
+  width: 50%;
+  color: var(--fg-2);
+  line-height: var(--l-h-lgr);
+}
+
+@media (max-width: 675px) {
+  .about__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about__figure,
+  .about__text {
+    width: unset;
+  }
+}

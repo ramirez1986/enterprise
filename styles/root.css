@@ -1,0 +1,120 @@
+:root {
+  color-scheme: dark;
+
+  --clr-ntrl-0:   hsl(0, 0%, 0%);
+  --clr-ntrl-100: hsl(0, 0%, 5%);
+  --clr-ntrl-200: hsl(0, 0%, 7%);
+  --clr-ntrl-300: hsl(0, 0%, 9%);
+  --clr-ntrl-400: hsl(234, 0%, 20%);
+  --clr-ntrl-500: hsl(234, 0%, 33%);
+  --clr-ntrl-600: hsl(234, 0%, 51%);
+  --clr-ntrl-700: hsl(0, 0%, 69%);
+  --clr-ntrl-800: hsl(0, 0%, 87%);
+  --clr-ntrl-900: hsl(0, 0%, 100%);
+
+  --bg-body: var(--clr-ntrl-100);
+  --bg-page: var(--clr-ntrl-200);
+
+  --bg-container: var(--clr-ntrl-0);
+
+  --bg-section:     var(--clr-ntrl-200);
+  --bg-section-alt: var(--clr-ntrl-300);
+
+  --bc-ntrl-dk: var(--clr-ntrl-400);
+  --bc-ntrl-lt: var(--clr-ntrl-800);
+
+  --bf-blur-base: 20px;
+
+  --br-base: .5rem;
+  --br-lg:   1rem;
+  
+  --bw-sm:   1px;
+  --bw-base: 1px;
+
+  --fg-1: var(--clr-ntrl-900);
+  --fg-2: var(--clr-ntrl-800);
+  --fg-3: var(--clr-ntrl-700);
+
+  --fg-link:     var(--fg-3);
+  --fg-link-hov: var(--fg-1);
+  
+  --bg-btn-primary:        var(--clr-ntrl-900);
+  --bg-btn-primary-hov:    var(--clr-ntrl-800);
+  --bg-btn-primary-active: var(--clr-ntrl-700);
+  --bc-btn-primary:        transparent;
+  --bc-btn-primary-hov:    transparent;
+  --bc-btn-primary-active: transparent;
+  --fg-btn-primary:        var(--clr-ntrl-0);
+  --fg-btn-primary-hov:    var(--fg-btn-primary);
+  --fg-btn-primary-active: var(--fg-btn-primary-hov);
+
+  --bg-btn-secondary:        var(--clr-ntrl-200);
+  --bg-btn-secondary-hov:    var(--clr-ntrl-400);
+  --bg-btn-secondary-active: var(--clr-ntrl-500);
+  --bc-btn-secondary:        var(--bc-ntrl-dk);
+  --bc-btn-secondary-hov:    var(--bc-ntrl-dk);
+  --bc-btn-secondary-active: var(--bc-btn-secondary-hov);
+  --fg-btn-secondary:        var(--fg-2);
+  --fg-btn-secondary-hov:    var(--fg-2);
+  --fg-btn-secondary-active: var(--fg-btn-secondary-hov);
+
+  --bg-btn-tertiary:        transparent;
+  --bg-btn-tertiary-hov:    var(--clr-ntrl-200);
+  --bg-btn-tertiary-active: var(--clr-ntrl-400);
+  --bc-btn-tertiary:        transparent;
+  --bc-btn-tertiary-hov:    transparent;
+  --bc-btn-tertiary-active: var(--bc-btn-tertiary-hov);
+  --fg-btn-tertiary:        var(--fg-2);
+  --fg-btn-tertiary-hov:    var(--fg-2);
+  --fg-btn-tertiary-active: var(--fg-btn-tertiary-hov);
+
+  --ff-primary: 'lato', sans-serif;
+  
+  --fs-smr:  .75rem;
+  --fs-sm:   .875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.3rem;
+  /* --fs-lgr:  1.6rem;
+  --fs-lgst: 1.9rem; */
+  --fs-lgr: 1.9rem;
+  --fs-lgst: 2.3rem;
+
+  --fw-bold:       700;
+  --fw-extra-bold: 800;
+
+  --h-smr:  32px;
+  --h-sm:   40px;
+  --h-base: 46px;
+  --h-lg:   60px;
+
+  --l-h-sm:   1.3;
+  --l-h-base: 1.5;
+  --l-h-lg:   1.7;
+  --l-h-lgr:  1.8;
+
+  --o-base: .9;
+
+  --p-sm:   5px;
+  --p-base: 10px;
+  --p-lg:   15px;
+  --p-lgr:  25px;
+  --p-lgst: 60px;
+  
+  --s-sm:    .3rem;
+  --s-base:  .62rem;
+  --s-lg:    1rem;
+  --s-lgr:   2rem;
+  --s-lgst:  3.5rem;
+
+  @media (prefers-reduced-motion: no-preference) {
+    --td-base: 200ms;
+    --td-fast: 100ms;
+  
+    --tf-primary:   cubic-bezier(.6,0,.7,1);
+    --tf-secondary: ease;
+  }
+
+  @media (max-width: 450px) {
+    --bw-base: 3px;
+  }
+}

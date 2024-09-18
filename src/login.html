@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enterprise | Вход в аккаунт</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="root">
+    <div class="nav-access">
+      <a href="#content" class="nav-access__link-to-content">Перейти к контенту</a>
+    </div>
+    <header class="nav-header">
+      <div class="nav-header__inner">
+        <a href="#" class="logo">Enterprise</a>
+        <nav class="nav-header__nav js-nav-header-nav">
+          <button class="nav-header__toggle-button btn btn--tertiary btn--round js-nav-header-nav-toggle-button" aria-label="Открыть меню" type="button">
+            <svg width="14" height="12" stroke="currentColor">
+              <use href="#burger-svg"/>
+            </svg>
+          </button>
+          <ul class="nav-header__links is-hidden js-nav-header-nav-links">
+            <li><a class="nav-header__link" href="#">Акции</a></li>
+            <li><a class="nav-header__link" href="#">Бронирование</a></li>
+            <li><a class="nav-header__link nav-header__link--profile" href="#">Личный кабинет</a></li>
+            <li>
+              <div class="nav-header__profile-menu">
+                <a href="./login.html">
+                  <button class="btn btn--tertiary btn--round" aria-label="Открыть меню аккаунта" type="button">
+                    <svg class="" width="20" height="20">
+                      <use href="#profile-svg"/>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="loginpage">
+      <h1>Тест!</h1>
+    </main>
+  </div>
+</body>
+</html>

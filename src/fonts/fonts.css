@@ -1,0 +1,22 @@
+@define-mixin font $familyName, $fileName, $weight, $style {
+  @font-face {
+    font-family: $familyName;
+    src: url('../src/fonts/$familyName/$fileName.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+b {
+  font-weight: 800;
+}
+
+@mixin font lato, Lato-Light, 200, normal;
+@mixin font lato, Lato-LightItalic, 200, italic;
+@mixin font lato, Lato-Regular, 400, normal;
+@mixin font lato, Lato-MediumItalic, 400, italic;
+@mixin font lato, Lato-SemiBold, 700, normal;
+@mixin font lato, Lato-SemiBoldItalic, 700, italic;
+@mixin font lato, Lato-Heavy, 800, normal;
+@mixin font lato, Lato-HeavyItalic, 800, italic;
