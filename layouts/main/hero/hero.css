@@ -76,7 +76,7 @@
   width: 100%;
   padding: 0 var(--p-lg);
   background: transparent;
-  border: var(--bw-base) solid var(--bc-ntrl-dk);
+  border: var(--bw-sm) solid var(--bc-ntrl-dk);
   border-radius: var(--br-base);
   transition: all var(--td-base) var(--tf-primary), outline 0ms;
 
@@ -162,6 +162,7 @@
   }
   
   .hero__input-container {
+    border-width: var(--bw-base);
     border-radius: var(--br-lg);
 
     &:hover,

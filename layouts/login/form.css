@@ -2,18 +2,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--s-lg);
-  width: 350px;
+  width: 40%;
+  height: 100%;
   padding: var(--p-lgr);
-  border-radius: var(--br-lg);
-  background: color-mix(in srgb, var(--bg-container) 90%, transparent);
+  margin-left: auto;
+  background: color-mix(in srgb, var(--bg-container) calc(var(--o-base) * 100%), transparent);
 }
 
 .form__mode {
   display: flex;
   gap: var(--s-sm);
   width: 100%;
-  margin: auto;
   margin-bottom: var(--s-base);
 }
 
@@ -33,30 +34,24 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding-right: var(--p-sm);
+  border: var(--bw-base) solid var(--bc-ntrl-dk);
   border-radius: var(--br-base);
   transition: all var(--td-base) var(--tf-primary), outline 0ms;
 
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    translate: -50% 0%;
-    width: 100%;
-    height: var(--bw-sm);
-    background-color: var(--bc-ntrl-dk);
-    transition: inherit;
+  &:hover {
+    border-color: var(--bc-ntrl-lt);
   }
 
-  &:hover::before,
-  &:has(input:focus-visible)::before {
-    background: var(--bc-ntrl-lt);
+  &:has(input:focus-visible) {
+    outline: var(--bw-base) solid var(--bc-ntrl-lt);
   }
 }
 
 .form__input {
   width: 100%;
-  padding: 0 var(--p-base) var(--p-sm);
+  height: var(--h-sm);
+  padding: 0 var(--p-base);
   line-height: var(--l-h-lgr);
 
   &:focus-visible {
@@ -75,15 +70,13 @@
 .form__footer {
   display: flex;
   justify-content: center;
-  /* position: absolute;
-  left: 50%;
-  translate: -50% 0%;
-  bottom: var(--s-base); */
   width: 100%;
 }
 
 @media (max-width: 450px) {
   .form {
     width: 100%;
+    height: unset;
+    border-radius: var(--br-lg);
   }
 }
