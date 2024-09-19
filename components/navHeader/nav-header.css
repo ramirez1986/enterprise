@@ -34,14 +34,6 @@
 }
 
 .nav-header__link {
-  color: var(--fg-link);
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-bold);
-  transition: all var(--td-base) var(--tf-primary), outline 0ms;
-
-  &:hover {
-    color: var(--fg-link-hov);
-  }
 }
 
 .nav-header__links li:has(.nav-header__link--profile) {

@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: center;
   gap: var(--s-sm);
+
+  &.field-group--horizontal {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--s-base);
+  }
 }
 
 .field-group__label {

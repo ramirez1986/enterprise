@@ -5,3 +5,8 @@
 @import '../components/logo/logo.css';
 @import '../components/navHeader/nav-header.css';
 @import '../components/buttons/buttons.css';
+@import '../components/field-group/field-group.css';
+@import '../layouts/login/loginpage.css';
+@import '../layouts/login/hero.css';
+@import '../layouts/login/form.css';
+@import '../layouts/footer.css';

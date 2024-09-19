@@ -59,6 +59,65 @@
   height: var(--h-smr);
 }
 
+.btn--smr {
+  height: var(--h-smst);
+}
+
 .btn--w-100 {
   width: 100%;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--w-smst);
+  height: var(--h-smst);
+  flex-shrink: 0;
+  border-radius: var(--br-base);
+  transition: var(--td-base) var(--tf-primary);
+
+  &.is-inactive {
+    @mixin btn tertiary;
+  }
+
+  &.is-active {
+    background: var(--bg-btn-primary);
+    border-color: var(--bc-btn-primary);
+    color: var(--fg-btn-primary);
+
+    &:hover {
+      background: var(--bg-btn-primary-hov);
+      border-color: var(--bc-btn-primary-hov);
+      color: var(--fg-btn-primary-hov);
+    }
+
+    &:active {
+      background: var(--bg-btn-primary-active);
+      border-color: var(--bc-btn-primary-active);
+      color: var(--fg-btn-primary-active);
+    }
+  }
+
+  svg {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.is-active svg {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.link {
+  color: var(--fg-link);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  transition: all var(--td-base) var(--tf-primary), outline 0ms;
+
+  &:hover {
+    color: var(--fg-link-hov);
+  }
 }

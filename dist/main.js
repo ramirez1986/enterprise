@@ -30,13 +30,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./layouts/hero/hero.js":
-/*!******************************!*\
-  !*** ./layouts/hero/hero.js ***!
-  \******************************/
+/***/ "./layouts/main/hero/hero.js":
+/*!***********************************!*\
+  !*** ./layouts/main/hero/hero.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_modals_modals_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/modals/modals.js */ \"./components/modals/modals.js\");\n\r\n\r\nconst heroEm = document.querySelector('.js-main-hero');\r\n\r\nconst heroSearch = {\r\n  mobileModal: new _components_modals_modals_js__WEBPACK_IMPORTED_MODULE_0__.Modal(\r\n    heroEm.querySelector('.js-search-filters-mobile'),\r\n    {\r\n      detached: true,\r\n      left: 0,\r\n      top: 0,\r\n    },\r\n  ),\r\n  cancelBtn: null,\r\n  applyBtn: null,\r\n};\r\n\r\nheroSearch.cancelBtn = heroSearch.mobileModal.modal.querySelector('.js-search-filters-cancel-btn');\r\nheroSearch.applyBtn = heroSearch.mobileModal.modal.querySelector('.js-search-filters-apply-btn');\r\n\r\nheroSearch.cancelBtn.addEventListener('click', (e) => {\r\n  heroSearch.mobileModal.close();\r\n});\r\n\r\nheroSearch.applyBtn.addEventListener('click', (e) => {\r\n  heroSearch.mobileModal.close();\r\n});\n\n//# sourceURL=webpack://enterprise/./layouts/hero/hero.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_modals_modals_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../components/modals/modals.js */ \"./components/modals/modals.js\");\n\r\n\r\nconst heroEm = document.querySelector('.js-main-hero');\r\n\r\nconst heroSearch = {\r\n  mobileModal: new _components_modals_modals_js__WEBPACK_IMPORTED_MODULE_0__.Modal(\r\n    heroEm.querySelector('.js-search-filters-mobile'),\r\n    {\r\n      detached: true,\r\n      left: 0,\r\n      top: 0,\r\n    },\r\n  ),\r\n  cancelBtn: null,\r\n  applyBtn: null,\r\n};\r\n\r\nheroSearch.cancelBtn = heroSearch.mobileModal.modal.querySelector('.js-search-filters-cancel-btn');\r\nheroSearch.applyBtn = heroSearch.mobileModal.modal.querySelector('.js-search-filters-apply-btn');\r\n\r\nheroSearch.cancelBtn.addEventListener('click', (e) => {\r\n  heroSearch.mobileModal.close();\r\n});\r\n\r\nheroSearch.applyBtn.addEventListener('click', (e) => {\r\n  heroSearch.mobileModal.close();\r\n});\n\n//# sourceURL=webpack://enterprise/./layouts/main/hero/hero.js?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _components_modals_modals_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/modals/modals.js */ \"./components/modals/modals.js\");\n/* harmony import */ var _components_navHeader_nav_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/navHeader/nav-header.js */ \"./components/navHeader/nav-header.js\");\n/* harmony import */ var _layouts_hero_hero_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/hero/hero.js */ \"./layouts/hero/hero.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://enterprise/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _components_modals_modals_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/modals/modals.js */ \"./components/modals/modals.js\");\n/* harmony import */ var _components_navHeader_nav_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/navHeader/nav-header.js */ \"./components/navHeader/nav-header.js\");\n/* harmony import */ var _layouts_main_hero_hero_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/main/hero/hero.js */ \"./layouts/main/hero/hero.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://enterprise/./src/main.js?");
 
 /***/ })
 

@@ -1,4 +1,4 @@
-import { Modal, Select } from '../../components/modals/modals.js';
+import { Modal, Select } from '../../../components/modals/modals.js';
 
 const heroEm = document.querySelector('.js-main-hero');
 

@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./components/navHeader/nav-header.js":
+/*!********************************************!*\
+  !*** ./components/navHeader/nav-header.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   navHeader: () => (/* binding */ navHeader)\n/* harmony export */ });\nconst navHeader = {\r\n  em: document.querySelector('.js-nav-header-nav'),\r\n};\r\nnavHeader.linksEm = navHeader.em.querySelector('.js-nav-header-nav-links');\r\nnavHeader.toggleButton = navHeader.em.querySelector('.js-nav-header-nav-toggle-button');\r\n\r\nnavHeader.toggleButton.addEventListener('click', () => {\r\n  navHeader.linksEm.classList.toggle('is-hidden');\r\n  navHeader.toggleButton.classList.toggle('is-active');\r\n});\r\n\r\n\n\n//# sourceURL=webpack://enterprise/./components/navHeader/nav-header.js?");
+
+/***/ }),
+
 /***/ "./src/login.css":
 /*!***********************!*\
   !*** ./src/login.css ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _login_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login.css */ \"./src/login.css\");\n\n\n//# sourceURL=webpack://enterprise/./src/login.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _login_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login.css */ \"./src/login.css\");\n/* harmony import */ var _components_navHeader_nav_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/navHeader/nav-header.js */ \"./components/navHeader/nav-header.js\");\n\r\n\n\n//# sourceURL=webpack://enterprise/./src/login.js?");
 
 /***/ })
 
@@ -57,6 +67,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

@@ -8,8 +8,8 @@
 @import '../components/navHeader/nav-header.css';
 @import '../components/modals/modal.css';
 @import '../components/modals/menu.css';
-@import '../layouts/homepage.css';
-@import '../layouts/hero/hero.css';
-@import '../layouts/about.css';
-@import '../layouts/news.css';
+@import '../layouts/main/homepage.css';
+@import '../layouts/main/hero/hero.css';
+@import '../layouts/main/about.css';
+@import '../layouts/main/news.css';
 @import '../layouts/footer.css';

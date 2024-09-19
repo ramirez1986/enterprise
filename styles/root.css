@@ -29,7 +29,7 @@
   --br-lg:   1rem;
   
   --bw-sm:   1px;
-  --bw-base: 1px;
+  --bw-base: 3px;
 
   --fg-1: var(--clr-ntrl-900);
   --fg-2: var(--clr-ntrl-800);
@@ -82,6 +82,13 @@
   --fw-bold:       700;
   --fw-extra-bold: 800;
 
+  --w-smst: 26px;
+  --w-smr:  32px;
+  --w-sm:   40px;
+  --w-base: 46px;
+  --w-lg:   60px;
+
+  --h-smst: 26px;
   --h-smr:  32px;
   --h-sm:   40px;
   --h-base: 46px;
